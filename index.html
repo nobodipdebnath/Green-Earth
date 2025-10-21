@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Earth</title>
+    <link rel="icon" type="image/png" href="images/right.png">
+    <link rel="stylesheet" href="style/index.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Tailwind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Icon CDN -->
+     <script src="https://kit.fontawesome.com/6cb37575c0.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="">
+    <header class="h-screen header-bg relative">
+      <nav id="navbar" class="flex z-20 justify-between  items-center px-[7%] py-4 bg-[#15803D] fixed top-0 left-0 right-0">
+        <a href="index.html">
+          <h1 class="text-white font-semibold text-3xl cursor-pointer">Green Earth</h1>
+        </a>
+        <div class="hidden md:block">
+          <ul class="flex gap-8 text-white font-semibold text-base">
+            <li class="cursor-pointer hover:text-[#FACC15]"><a href="about.html">About</a></li>
+            <li class="cursor-pointer hover:text-[#FACC15]"><a href="galary.html">Gallery</a></li>
+            <li class="cursor-pointer hover:text-[#FACC15]"><a href="#footer">Plant a Tree</a></li>
+          </ul>
+        </div>
+        <div class="hidden md:block">
+          <a href="#footer">
+            <button class="bg-[#FACC15] text-base cursor-pointer py-4 px-10 rounded-[38px] font-semibold  text-color">Plant a Tree</button>
+          </a>
+        </div>
+        <div class="md:hidden">
+          <i class="fa-solid fa-bars text-3xl text-white"></i>
+        </div>
+      </nav>
+      <div class="flex justify-center py-[80%] px-[4%] lg:px-0 items-center flex-col md:py-[21%] relative">
+        <div class="absolute hidden md:block bottom-9 left-0">
+          <img src="images/left.png" alt="">
+        </div>
+        <div class="absolute hidden md:block bottom-9 right-0">
+          <img src="images/right.png" alt="">
+        </div>
+        <h1 class="color text-4xl  md:text-5xl font-bold pb-2 text-center">Plant a Tree, Grow a Future</h1>
+        <p class="color text-base text-center mb-6">Join our mission to plant 1 million trees and make the Earth greener for future <br> generations.</p>
+        <div>
+          <button class="bg-[#FACC15] text-base cursor-pointer py-4 px-10 rounded-[38px] font-semibold  text-color">Get Involved</button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="px-[5%] mx-auto py-25 bg">
+        <h1 class="text-center color text-3xl font-bold">Choose Your Trees</h1>
+        <div class="grid grid-cols-5 gap-7">
+          <!-- left section -->
+          <div class="col-span-1 mt-10">
+            <h1 class="text-xl color font-semibold">Categories</h1>
+            <div class="mt-4 flex gap-2 flex-col">
+              <button id="all-tree" class="w-full py-3 px-3 btn-bg text-base text-white font-semibold cursor-pointer rounded-lg">
+                All Trees
+              </button>
+              <button id="fruit-tree" class="w-full py-3 px-3 header-bg text-base text-color font-semibold cursor-pointer rounded-lg">
+                Fruit Trees
+              </button>
+              <button id="flower-tree" class="w-full py-3 px-3 header-bg text-base text-color font-semibold cursor-pointer rounded-lg">
+                Flowering Trees
+              </button>
+              <button id="shade-tree" class="w-full py-3 px-3 header-bg text-base text-color font-semibold cursor-pointer rounded-lg">
+                Shade Trees
+              </button>
+              <button id="medicinal-tree" class="w-full py-3 px-3 header-bg text-base text-color font-semibold cursor-pointer rounded-lg">
+                Medicinal Trees
+              </button>
+              <button id="timber-tree" class="w-full py-3 px-3 header-bg text-base text-color font-semibold cursor-pointer rounded-lg">
+                Timber Trees
+              </button>
+              <button id="evergreen-tree" class="w-full py-3 px-3 header-bg text-base text-color font-semibold cursor-pointer rounded-lg">
+                Evergreen Trees
+              </button>
+              <button id="ornamental-tree" class="w-full py-3 px-3 header-bg text-base text-color font-semibold cursor-pointer rounded-lg">
+                Ornamental Plants
+              </button>
+              <button id="bamboo-tree" class="w-full py-3 px-3 header-bg text-base text-color font-semibold cursor-pointer rounded-lg">
+                Bamboo
+              </button>
+              <button id="climbers-tree" class="w-full py-3 px-3 header-bg text-base text-color font-semibold cursor-pointer rounded-lg">
+                Climbers
+              </button>
+              <button id="aquatic-tree" class="w-full py-3 px-3 header-bg text-base text-color font-semibold cursor-pointer rounded-lg">
+                Aquatic Plants
+              </button>
+            </div>
+          </div>
+          <!-- mid section -->
+          <div class="col-span-3 mt-10">
+            <div id="all-container" class="grid grid-cols-3 gap-5 ">
+
+            </div>
+            <div id="fruit-container" class="grid grid-cols-3 gap-5 hidden">
+
+            </div>
+            <div id="flower-container" class="grid grid-cols-3 gap-5 hidden">
+
+            </div>
+            <div id="shade-container" class="grid grid-cols-3 gap-5 hidden">
+
+            </div>
+            <div id="medicinal-container" class="grid grid-cols-3 gap-5 hidden">
+
+            </div>
+            <div id="timber-container" class="grid grid-cols-3 gap-5 hidden">
+
+            </div>
+            <div id="evergreen-container" class="grid grid-cols-3 gap-5 hidden">
+
+            </div>
+            <div id="ornamental-container" class="grid grid-cols-3 gap-5 hidden">
+
+            </div>
+            <div id="bamboo-container" class="grid grid-cols-3 gap-5 hidden">
+
+            </div>
+            <div id="climbers-container" class="grid grid-cols-3 gap-5 hidden">
+
+            </div>
+            <div id="aquatic-container" class="grid grid-cols-3 gap-5 hidden">
+
+            </div>
+          </div>
+          <!-- right section -->
+          <div class="col-span-1 p-4 bg-white rounded-lg mt-10">
+            <h1 class="color; text-xl font-semibold">Your Cart</h1>
+            <div id="card-container" class="grid grid-cols-2 gap-2">
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="lg:px-[20%] px-[8%] mx-auto py-25 bg">
+        <h1 class="text-center text-[32px] font-semibold color">About the Campaign</h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center mt-10 gap-6">
+          <div>
+            <img src="images/image.png" alt="">
+          </div>
+          <div>
+            <p class="text-base color">Green Earth is a global tree plantation initiative dedicated to fighting climate change. Since our start, we’ve planted over 500,000 trees worldwide. By joining our campaign, you help restore forests, create habitats for wildlife, and combat global warming.</p>
+            <ul class="list-disc text-base color ml-4 mt-5">
+              <li>Restoration of natural habitats</li>
+              <li>Improvement of air quality</li>
+              <li>Support for local communities</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="px-[10%] mx-auto py-25 bg2">
+        <h1 class="text-center text-[32px] font-semibold color">Our Impact</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+          <div class="flex flex-col justify-center items-center p-10 bg-white rounded-xl cursor-pointer shadow-sm">
+            <h1 class="text-[32px] font-semibold text-color">500K+</h1>
+            <p class="text-base color">Trees Planted</p>
+          </div>
+          <div class="flex flex-col justify-center items-center p-10 bg-white rounded-xl cursor-pointer shadow-sm">
+            <h1 class="text-[32px] font-semibold text-color">120+</h1>
+            <p class="text-base color">Communities Involved</p>
+          </div>
+          <div class="flex flex-col justify-center items-center p-10 bg-white rounded-xl cursor-pointer shadow-sm">
+            <h1 class="text-[32px] font-semibold text-color">30+</h1>
+            <p class="text-base color">Countries Reached</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="pt-25 px-[3%]">
+      <h1 class="text-center text-[32px] font-semibold text-white">Plant a Tree Today</h1>
+      <div class="lg:w-1/2 w-full form-bg mx-auto p-4 md:p-10 rounded-2xl mt-10">
+        <form action="" class="flex flex-col justify-center items-center gap-3">
+          <input class="w-full p-3 bg-white outline-none rounded-xl border-none" placeholder="Your Name" type="text" name="" id="">
+          <input class="w-full p-3 bg-white outline-none rounded-xl border-none" placeholder="Your Email Address" type="text" name="" id="">
+          <input class="w-full p-3 bg-white outline-none rounded-xl border-none placeholder:text-black/80" placeholder="Number of Tree" type="number" name="" id="">
+   
+          <button class="w-full py-3 rounded-xl cursor-pointer font-semibold text-color bg-[#FACC15]">Donate Now</button>
+      </form>
+      </div>
+      <p class="py-6 text-center text-white mt-25 copy" >© 2025 Green Earth. All Rights Reserved.</p>
+    </footer>
+  </body>
+  <script src="script/script.js"></script>
+  <script src="script/fruit.js"></script>
+  <script src="script/flower.js"></script>
+  <script src="script/shade.js"></script>
+  <script src="script/medicinal.js"></script>
+  <script src="script/timber.js"></script>
+  <script src="script/evergreen.js"></script>
+  <script src="script/ornamental.js"></script>
+  <script src="script/bamboo.js"></script>
+  <script src="script/climbers.js"></script>
+  <script src="script/aquatic.js"></script>
+</html>
