@@ -184,12 +184,13 @@
     <footer id="footer" class="pt-25 px-[3%]">
       <h1 class="text-center text-[32px] font-semibold text-white">Plant a Tree Today</h1>
       <div class="lg:w-1/2 w-full form-bg mx-auto p-4 md:p-10 rounded-2xl mt-10">
-        <form action="" class="flex flex-col justify-center items-center gap-3">
-          <input class="w-full p-3 bg-white outline-none rounded-xl border-none" placeholder="Your Name" type="text" name="" id="">
-          <input class="w-full p-3 bg-white outline-none rounded-xl border-none" placeholder="Your Email Address" type="text" name="" id="">
-          <input class="w-full p-3 bg-white outline-none rounded-xl border-none placeholder:text-black/80" placeholder="Number of Tree" type="number" name="" id="">
+        <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col justify-center items-center gap-3">
+          <input type="hidden" name="access_key" value="1d1041f6-669b-4196-a44e-8986afc37fe1">
+          <input class="w-full p-3 bg-white outline-none rounded-xl border-none" placeholder="Your Name" type="text" name="name" id="">
+          <input class="w-full p-3 bg-white outline-none rounded-xl border-none" placeholder="Your Email Address" type="email" name="email" id="">
+          <input class="w-full p-3 bg-white outline-none rounded-xl border-none placeholder:text-black/80" placeholder="Number of Tree" type="number" name="number" id="">
    
-          <button class="w-full py-3 rounded-xl cursor-pointer font-semibold text-color bg-[#FACC15]">Donate Now</button>
+          <button type="submit" class="w-full py-3 rounded-xl cursor-pointer font-semibold text-color bg-[#FACC15]">Donate Now</button>
       </form>
       </div>
       <p class="py-6 text-center text-white mt-25 copy" >© 2025 Green Earth. All Rights Reserved.</p>
